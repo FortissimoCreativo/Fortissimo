@@ -4,62 +4,50 @@
 <meta charset="UTF-8">
 <title>Fortissimo</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: #111;
+    font-family: 'Inter', sans-serif;
+    background: black;
     color: white;
+    overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+    height: 120vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("fortissimo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.hero {
-    height: 100vh;
-    background: url("fortissimo.png") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero-content {
+    max-width: 700px;
 }
 
+/* TYPOGRAFIA */
 h1 {
-    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+
+    opacity: 0;
+    animation: fadeHero 1.5s forwards;
 }
 
-p {
-    font-size: 20px;
-    max-width: 600px;
+.hero p {
+    font-size: 22px;
+    opacity: 0;
+    animation: fadeHero 2s forwards;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: gold;
-    border: none;
-    cursor: pointer;
-}
-</style>
+.hero p:nth-child(2) { animation-delay: 0.5s; }
+.hero p:nth-child(3) { animation-delay: 1s; }
 
-</head>
-
-<body>
-
-<div class="hero">
-    <h1>FORTISSIMO</h1>
-
-    <p>
-    Nie piszę tekstów.<br>
-    Tworzę przekaz, którego nie da się zignorować.
-    </p>
-
-    <a href="mailto:e-fortissimo@hotmail.com">
-        <button>Napisz do mnie</button>
-    </a>
-</div>
-
-<section style="background:white; color:black; padding:60px;">
-    <h2>Kim jestem</h2>
-    <p>Copywriter robiący mocne teksty i manifesty.</p>
-</section>
-
-<section style="padding:60px;">
