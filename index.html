@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <title>Fortissimo</title>
 
-<!-- FONT PREMIUM -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -18,12 +17,12 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("fortissimo.png");
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("fortissimo.png");
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -31,47 +30,26 @@ body {
     max-width: 700px;
 }
 
-/* TYPOGRAFIA */
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     letter-spacing: 6px;
-    margin-bottom: 20px;
 }
 
 p {
     font-size: 18px;
     line-height: 1.7;
-    opacity: 0.8;
-}
-
-/* ANIMACJA */
-.fade {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn 1s forwards;
-}
-
-.fade:nth-child(1) { animation-delay: 0.2s; }
-.fade:nth-child(2) { animation-delay: 0.4s; }
-.fade:nth-child(3) { animation-delay: 0.6s; }
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    opacity: 0.85;
 }
 
 /* BUTTON */
 button {
-    margin-top: 40px;
-    padding: 15px 40px;
+    margin-top: 30px;
+    padding: 14px 35px;
     background: #e0a03b;
     border: none;
-    color: black;
+    border-radius: 40px;
     font-size: 16px;
-    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -89,3 +67,141 @@ section {
 
 .white {
     background: white;
+    color: black;
+}
+
+.dark {
+    background: #1a1f27;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* PORTFOLIO */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.card {
+    background: #222833;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* CTA */
+.cta {
+    background: black;
+}
+
+/* ANIMACJA SCROLL */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+
+<h1>FORTISSIMO</h1>
+
+<p>
+Nie piszę tekstów.<br>
+Tworzę przekaz, którego nie da się zignorować.
+</p>
+
+<p>
+Manifesty. Copy. Komunikacja, która zostaje w głowie.
+</p>
+
+<a href="mailto:e-fortissimo@hotmail.com">
+<button>Napisz do mnie</button>
+</a>
+
+</div>
+</div>
+
+<!-- KIM JESTEM -->
+<section class="white hidden">
+<h2>Kim jestem</h2>
+<p>
+Tworzę słowa, które nadają markom charakter.  
+Nie opisuję — buduję narrację.  
+Nie komunikuję — tworzę głos.
+</p>
+</section>
+
+<!-- DLACZEGO JA -->
+<section class="dark hidden">
+<h2>Dlaczego Fortissimo</h2>
+<p>
+Bo przeciętny copywriting nie zapada w pamięć.  
+Tworzę komunikację, która zostawia ślad i robi robotę.
+</p>
+</section>
+
+<!-- OFERTA -->
+<section class="white hidden">
+<h2>Co robię</h2>
+<ul>
+<li>→ copywriting stron</li>
+<li>→ manifesty marki</li>
+<li>→ komunikacja i hasła</li>
+</ul>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="dark hidden">
+<h2>Wybrane projekty</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Manifest marki</h3>
+<p>Tworzenie głosu marki lifestyle.</p>
+</div>
+
+<div class="card">
+<h3>Landing page</h3>
+<p>Copy zwiększające konwersję.</p>
+</div>
+
+<div class="card">
+<h3>Kampania</h3>
+<p>Komunikacja reklamowa i hasła.</p>
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta hidden">
+<h2>Zróbmy coś mocnego</h2>
+<p>
+Twoja marka ma coś do powiedzenia.  
+Ja sprawię, że ktoś to zapamięta.
