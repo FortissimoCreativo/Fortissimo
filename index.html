@@ -4,50 +4,57 @@
 <meta charset="UTF-8">
 <title>Fortissimo</title>
 
+<!-- FONT PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background: #0a0c10;
     color: white;
-    background: #0e1116;
-    overflow-x: hidden;
 }
 
 /* HERO */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url("fortissimo.png");
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("fortissimo.png");
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+.hero-content {
+    max-width: 700px;
+}
+
+/* TYPOGRAFIA */
 h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 80px;
     letter-spacing: 6px;
     margin-bottom: 20px;
 }
 
-.hero p {
-    max-width: 650px;
-    font-size: 22px;
-    opacity: 0.9;
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.8;
 }
 
 /* ANIMACJA */
 .fade {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
     animation: fadeIn 1s forwards;
 }
 
-.fade:nth-child(2) { animation-delay: 0.2s; }
-.fade:nth-child(3) { animation-delay: 0.4s; }
+.fade:nth-child(1) { animation-delay: 0.2s; }
+.fade:nth-child(2) { animation-delay: 0.4s; }
+.fade:nth-child(3) { animation-delay: 0.6s; }
 
 @keyframes fadeIn {
     to {
@@ -60,12 +67,12 @@ h1 {
 button {
     margin-top: 40px;
     padding: 15px 40px;
-    font-size: 16px;
     background: #e0a03b;
     border: none;
     color: black;
-    cursor: pointer;
+    font-size: 16px;
     border-radius: 50px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -80,96 +87,5 @@ section {
     text-align: center;
 }
 
-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-section p {
-    max-width: 600px;
-    margin: 15px auto;
-    line-height: 1.7;
-}
-
-/* LISTA */
-ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 20px auto;
-    font-size: 18px;
-}
-
-ul li {
-    margin: 10px 0;
-    opacity: 0.8;
-}
-
-/* SEKCJE KOLORY */
 .white {
     background: white;
-    color: black;
-}
-
-.dark {
-    background: #2d3e4f;
-}
-
-/* PORTFOLIO */
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.box {
-    background: #1a1f27;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.box p {
-    opacity: 0.7;
-}
-
-/* FOOTER */
-.footer {
-    padding: 60px;
-    background: black;
-}
-</style>
-
-</head>
-
-<body>
-
-<!-- HERO -->
-<div class="hero">
-    <h1 class="fade">FORTISSIMO</h1>
-
-    <p class="fade">
-    Nie piszę tekstów.<br>
-    Tworzę przekaz, którego nie da się zignorować.
-    </p>
-
-    <p class="fade">
-    Manifesty. Copy. Komunikacja, która zostaje w głowie.
-    </p>
-
-    <a href="mailto:e-fortissimo@hotmail.com">
-        <button class="fade">Napisz do mnie</button>
-    </a>
-</div>
-
-<!-- KIM JESTEM -->
-<section class="white">
-    <h2>Kim jestem</h2>
-    <p>
-    Jestem copywriterem. Tworzę teksty, które przyciągają uwagę
-    i nadają markom charakter. Buduję komunikację, która zostaje
-    w głowie i działa.
-    </p>
-</section>
-
-<!-- OFERTA -->
-<section class="dark">
