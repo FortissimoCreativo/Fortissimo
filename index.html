@@ -2,48 +2,64 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-
-<!-- FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
 <title>Fortissimo</title>
 
 <style>
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #0a0c10;
+    font-family: Arial;
+    background: #111;
     color: white;
-}
-
-/* HERO */
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("fortissimo.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
-.hero-content {
-    max-width: 700px;
+.hero {
+    height: 100vh;
+    background: url("fortissimo.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    letter-spacing: 6px;
+    font-size: 60px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.7;
-    opacity: 0.85;
+    font-size: 20px;
+    max-width: 600px;
 }
 
-/* BUTTON */
 button {
-    margin-top: 30px;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>FORTISSIMO</h1>
+
+    <p>
+    Nie piszę tekstów.<br>
+    Tworzę przekaz, którego nie da się zignorować.
+    </p>
+
+    <a href="mailto:e-fortissimo@hotmail.com">
+        <button>Napisz do mnie</button>
+    </a>
+</div>
+
+<section style="background:white; color:black; padding:60px;">
+    <h2>Kim jestem</h2>
+    <p>Copywriter robiący mocne teksty i manifesty.</p>
+</section>
+
+<section style="padding:60px;">
